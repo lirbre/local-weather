@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #020202;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.weather-wrap {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    .city-text {
+        font-size: 55px;
+        font-weight: 300;
+    }
+
+    .details-text {
+        font-size: 40px;
+        font-weight: 200;
+
+        margin-top: 1px;
+    }
+
+    .main-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        width: 35vw;
+        
+        margin-top: 10vh;
+
+        .temp-text {
+            display: flex;
+
+            font-size: 75px;
+            font-weight: 300;
+        }
+    }
+
+    .values-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        width: 30vw;
+
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+
+        .values-text {
+            font-size: 25px;
+            font-weight: 350;
+        }
+    }
+}
+
+@media screen and (max-width: 800PX) {
+    .weather-wrap {
+        .city-text {
+            font-size: 40px !important;
+        }
+    
+        .details-text {
+            font-size: 30px !important;
+        }
+
+        .main-wrap {
+            width: 93vw !important;
+            margin-left: 4vw;
+        }
+        
+        .values-wrap {
+            width: 90vw !important;
+            
+            margin-top: 10vh !important;
+        }
+    }   
+}
