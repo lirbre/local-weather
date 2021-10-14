@@ -35,12 +35,13 @@ function App() {
   }, [])
 
   if (location === false) {
-  return (
-    <div>
-        <h1>please accept location</h1>
-    </div>
-  );
+    return (
+      <div className="error">
+          <h1>please accept location</h1>
+      </div>
+    );
   } else {
+    
     const urlIcon = `http://openweathermap.org/img/wn/${icon}@2x.png`
 
     return (
